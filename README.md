@@ -11,25 +11,25 @@ jmp means to jump at a certain line in the file for example jmp +5 you will have
 nop stands for No Operation - it does nothing. The instruction immediately below it is executed next.
 For example, consider the following program:
 
-nop +0
-acc +1
-jmp +4
-acc +3
-jmp -3
-acc -99
-acc +1
-jmp -4
-acc +6
+nop +0<br>
+acc +1<br>
+jmp +4<br>
+acc +3<br>
+jmp -3<br>
+acc -99<br>
+acc +1<br>
+jmp -4<br>
+acc +6<br>
 
 These instructions are visited in this order:
-nop +0  | 1
-acc +1  | 2, 8(!)
-jmp +4  | 3
-acc +3  | 6
-jmp -3  | 7
-acc -99 |
-acc +1  | 4
-jmp -4  | 5
-acc +6  |
+nop +0  | 1<br>
+acc +1  | 2, 8(!)<br>
+jmp +4  | 3<br>
+acc +3  | 6<br>
+jmp -3  | 7<br>
+acc -99 |<br>
+acc +1  | 4<br>
+jmp -4  | 5<br>
+acc +6  |<br>
 
 The code will print the acc value just before the instructions repeat themselves and will stop.
