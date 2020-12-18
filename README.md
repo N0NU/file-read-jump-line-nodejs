@@ -21,7 +21,7 @@ acc +1<br>
 jmp -4<br>
 acc +6<br>
 
-These instructions are visited in this order:
+These instructions are visited in this order:<br>
 nop +0  | 1<br>
 acc +1  | 2, 8(!)<br>
 jmp +4  | 3<br>
